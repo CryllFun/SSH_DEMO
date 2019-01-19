@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-8-28 14:01:34 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.iotek.bean.User" table="t_user">
+		<id name="userId" type="java.lang.Integer">
+			<column name="user_id"></column>
+			<generator class="native"></generator>
+		</id>
+		<property name="userName" type="java.lang.String">
+			<column name="user_name" sql-type="varchar(30)"></column>
+		</property>
+		<property name="userPwd" type="java.lang.String">
+			<column name="user_pwd"/>
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="email"/>
+		</property>
+		<property name="mobile" type="java.lang.String">
+			<column name="mobile"/>
+		</property>
+		<property name="inviteId" type="java.lang.Integer">
+			<column name="invite_id"/>
+		</property>
+		<property name="inviteName" type="java.lang.String">
+			<column name="invite_name"/>
+		</property>
+		<property name="idNo" type="java.lang.String">
+			<column name="id_no"/>
+		</property>
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time"/>
+		</property>
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time"/>
+		</property>
+	</class>
+    <!-- <class name="com.iotek.bean.User" table="USER">
+        <id name="userId" type="int">
+            <column name="USERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="userPwd" type="java.lang.String">
+            <column name="USERPWD" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="mobile" type="java.lang.String">
+            <column name="MOBILE" />
+        </property>
+        <property name="inviteId" type="int">
+            <column name="INVITEID" />
+        </property>
+        <property name="inviteName" type="java.lang.String">
+            <column name="INVITENAME" />
+        </property>
+        <property name="idNo" type="java.lang.String">
+            <column name="IDNO" />
+        </property>
+        <property name="createTime" type="java.util.Date">
+            <column name="CREATETIME" />
+        </property>
+        <property name="updateTime" type="java.util.Date">
+            <column name="UPDATETIME" />
+        </property>
+    </class> -->
+</hibernate-mapping>
